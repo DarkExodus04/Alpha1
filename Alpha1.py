@@ -29,8 +29,6 @@ def wishMe():
     speak("I am Alpha.Can i be of any help to you?")
 
 def takeCommand():
-    #It takes microphone input from the user and returns string output
-
     r = sr.Recognizer()
     with sr.Microphone() as source:
         print("Listening...")
@@ -60,7 +58,9 @@ def googlesearch() :
     chrome_path = r'C:\Program Files (x86)\Google\Chrome\Application\chrome.exe %s'
     for url in search(query, tld="co.in", num=1, stop=1, pause=2):
         webbrowser.open("https://google.com/search?q=%s" % query)
-if __name__ == "__main__":
+        
+        
+if __name__ == "__main__": 
     wishMe()
     while True:
         query = takeCommand().lower()
