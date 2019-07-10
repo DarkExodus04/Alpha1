@@ -1,6 +1,6 @@
 # Alpha1
 A basic virtual assistant that can perform google search and send emails.
-Modules needed : 1.pyttsx3 
+Modules used : 1.pyttsx3 
                  2.speechRecognition 
                  3.smtplib
                  4.googlesearch
